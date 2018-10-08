@@ -28,7 +28,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 
         // prefix путь расположения наших веб страниц (war source dir)
-        viewResolver.setPrefix("/WEB-INF/views");
+        viewResolver.setPrefix("/WEB-INF/views/");
 
         // serSuffix в каком расширении будем искать эти страницы
         viewResolver.setSuffix(".jsp");

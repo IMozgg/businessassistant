@@ -4,7 +4,7 @@ import io.khasang.ba.config.application.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Аналог web xml
+ * Аналог web xml , чтоб класс стал классом java конфигурации а не xml то нужно наследовать
  */
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 

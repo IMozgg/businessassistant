@@ -53,17 +53,20 @@
 
     <build>
         <finalName>businessassistant</finalName>
+
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <!-- указываем ручками директорию для тестов -->
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+
+        <!-- подключаем плагины -->
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
                     <source>1.8</source>
-                    <taget>1.8</taget>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>${name}</title>
 </head>
 <body>
-    <p>Hello my ${name}</p>
+    <h1>This is page with your name: ${name}</h1>
 </body>
 </html>
