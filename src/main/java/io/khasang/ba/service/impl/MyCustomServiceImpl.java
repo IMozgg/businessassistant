@@ -17,7 +17,7 @@ public class MyCustomServiceImpl implements MyService {
         return "Been from interface qualifier second";
     }
 
-    @PostConstruct
+    @PostConstruct // init-method
     public void init() {
         System.err.println("BEFORE INIT");
     }

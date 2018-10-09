@@ -14,6 +14,7 @@
         <spring.version>4.3.19.RELEASE</spring.version>
         <javax.version>3.0.1</javax.version>
         <jstl.version>1.2</jstl.version>
+        <postgresql.version>42.2.5</postgresql.version>
     </properties>
 
     <!-- Библиотеки -->
@@ -34,6 +35,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- posgresql JDBC -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
         </dependency>
 
         <!-- JAVAX -->
