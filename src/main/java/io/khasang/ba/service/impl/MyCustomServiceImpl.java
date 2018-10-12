@@ -2,7 +2,6 @@ package io.khasang.ba.service.impl;
 
 import io.khasang.ba.service.MyService;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

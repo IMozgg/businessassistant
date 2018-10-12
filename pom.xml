@@ -15,6 +15,7 @@
         <javax.version>3.0.1</javax.version>
         <jstl.version>1.2</jstl.version>
         <postgresql.version>42.2.5</postgresql.version>
+        <hibernate.version>5.3.6.Final</hibernate.version>
     </properties>
 
     <!-- Библиотеки -->
@@ -40,6 +41,27 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <!-- spring ORM -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <!-- Hobernate core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
 
         <!-- posgresql JDBC -->
