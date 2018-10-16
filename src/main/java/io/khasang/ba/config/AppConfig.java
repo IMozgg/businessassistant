@@ -1,5 +1,8 @@
 package io.khasang.ba.config;
 
+import io.khasang.ba.dao.DogDao;
+import io.khasang.ba.dao.impl.DogDaoImpl;
+import io.khasang.ba.entity.Dog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,5 +45,10 @@ public class AppConfig {
         jdbcDao.setUsersByUsernameQuery(environment.getRequiredProperty("usersByQuery"));
         jdbcDao.setAuthoritiesByUsernameQuery(environment.getRequiredProperty("rolesByQuery"));
         return jdbcDao;
+    }
+
+    @Bean
+    public DogDao dogDao() {
+        return new DogDaoImpl(Dog.class);
     }
 }
