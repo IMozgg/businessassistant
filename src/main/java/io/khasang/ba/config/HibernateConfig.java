@@ -29,7 +29,7 @@ public class HibernateConfig {
         dataSource.setUrl(environment.getRequiredProperty("hibernate.url"));
         dataSource.setUsername(environment.getRequiredProperty("hibernate.user"));
         dataSource.setPassword(environment.getRequiredProperty("hibernate.password"));
-        dataSource.setSchema("private");
+        //dataSource.setSchema("private");
         return dataSource;
     }
 
