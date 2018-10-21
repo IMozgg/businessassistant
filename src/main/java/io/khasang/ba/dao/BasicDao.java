@@ -13,9 +13,9 @@ public interface BasicDao<T> {
     T create(T entity);
 
     /**
-     * method for get dog by id
-     * @param id - dog id
-     * @return dog by id
+     * method for get entity by id
+     * @param id - entity id
+     * @return entity by id
      */
     T getById(long id);
 
@@ -24,4 +24,18 @@ public interface BasicDao<T> {
      * @return entities list
      */
     List<T> getList();
+
+    /**
+     * method for update entity
+     *
+     * @param entity - entity for update
+     * @return updated entity
+     */
+    T update(T entity);
+
+    /**
+     * method for deleting entity
+     * @param entity - entity
+     * */
+    void deleteById(T entity);
 }

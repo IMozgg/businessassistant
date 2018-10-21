@@ -31,4 +31,18 @@ public class DogController {
     public List<Dog> getAllDogs() {
         return dogService.getAllDogs();
     }
+
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public Dog updateDog(@RequestBody Dog dog) {
+        return dogService.updateDog(dog);
+    }
+
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE, produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public Dog deleteDog(@PathVariable(value = "id") String id) {
+        Dog lastCopyDog = dogService.getDogById(Long.parseLong(id));
+        dogService.deleteById(lastCopyDog);
+        return lastCopyDog;
+    }
 }

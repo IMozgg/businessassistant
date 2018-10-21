@@ -26,4 +26,18 @@ public interface DogService {
      * @return dog's list
      * */
     List<Dog> getAllDogs();
+
+    /**
+     * method for update dog info
+     *
+     * @param dog - dog for update
+     * @return return dog
+     */
+    Dog updateDog(Dog dog);
+
+    /**
+     * method for deleting Dog by specific id
+     * @param dog - dog
+     * */
+    void deleteById(Dog dog);
 }

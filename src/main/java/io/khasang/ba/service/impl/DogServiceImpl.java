@@ -28,4 +28,14 @@ public class DogServiceImpl implements DogService {
     public List<Dog> getAllDogs() {
         return dogDao.getList();
     }
+
+    @Override
+    public Dog updateDog(Dog dog) {
+        return dogDao.update(dog);
+    }
+
+    @Override
+    public void deleteById(Dog dog) {
+        dogDao.deleteById(dog);
+    }
 }

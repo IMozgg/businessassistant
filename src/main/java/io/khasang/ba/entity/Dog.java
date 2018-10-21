@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity
 public class Dog {
     @Id
-    @GeneratedValue//(strategy = GenerationType.AUTO) default AUTO
+    @GeneratedValue(strategy = GenerationType.AUTO)// default AUTO
     @Column(name = "dog_id")
     private long id;
 

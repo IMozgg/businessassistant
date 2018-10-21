@@ -51,4 +51,15 @@ public class BasicDaoImpl<T> implements BasicDao<T> {
 
         //return (List<T>) getSessionFactory().createQuery("from T as c").list();
     }
+
+    @Override
+    public T update(T entity) {
+        getSessionFactory().update(entity);
+        return entity;
+    }
+
+    @Override
+    public void deleteById(T entity) {
+        getSessionFactory().delete(entity);
+    }
 }
