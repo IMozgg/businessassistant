@@ -1,7 +1,5 @@
 package io.khasang.ba.dao;
 
-import io.khasang.ba.entity.Dog;
-
 import java.util.List;
 
 public interface BasicDao<T> {

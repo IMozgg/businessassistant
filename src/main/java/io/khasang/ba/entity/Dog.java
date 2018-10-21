@@ -1,18 +1,17 @@
 package io.khasang.ba.entity;
 
+
 import javax.persistence.*;
 
 @Entity
 public class Dog {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue//(strategy = GenerationType.AUTO) default AUTO
     @Column(name = "dog_id")
     private long id;
 
-    @Column(name = "dog_name")
     private String name;
 
-    @Column(name = "dog_desc")
     private String description;
 
     public long getId() {
