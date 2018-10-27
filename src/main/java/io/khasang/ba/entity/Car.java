@@ -19,6 +19,11 @@ public class Car {
 
     //@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @SuppressWarnings(value = "ALL")
+    @JoinTable(
+            name="car_employee",
+            joinColumns=@JoinColumn(name="car_id", referencedColumnName="car_id"),
+            inverseJoinColumns=@JoinColumn(name="employee_id", referencedColumnName="employee_id"))
     private List<Employee> employeeList = new ArrayList<>();
 
     public long getId() {
