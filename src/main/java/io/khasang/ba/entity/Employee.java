@@ -19,6 +19,9 @@ public class Employee {
     //@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     //private List<Car> carList = new ArrayList<>();
 
+    /*public Employee() {
+    }*/
+
     public long getId() {
         return id;
     }
