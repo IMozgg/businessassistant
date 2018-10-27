@@ -1,8 +1,14 @@
 package io.khasang.ba.config;
 
+import io.khasang.ba.dao.CarDao;
 import io.khasang.ba.dao.DogDao;
+import io.khasang.ba.dao.EmployeeDao;
+import io.khasang.ba.dao.impl.CarDaoImpl;
 import io.khasang.ba.dao.impl.DogDaoImpl;
+import io.khasang.ba.dao.impl.EmployeeDaoImpl;
+import io.khasang.ba.entity.Car;
 import io.khasang.ba.entity.Dog;
+import io.khasang.ba.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -50,5 +56,15 @@ public class AppConfig {
     @Bean
     public DogDao dogDao() {
         return new DogDaoImpl(Dog.class);
+    }
+
+    @Bean
+    public CarDao carDao() {
+        return new CarDaoImpl(Car.class);
+    }
+
+    @Bean
+    public EmployeeDao employeeDao() {
+        return new EmployeeDaoImpl(Employee.class);
     }
 }
